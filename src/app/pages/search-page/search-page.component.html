@@ -1,0 +1,11 @@
+<div class="profile-card__wrapper">
+  <h1>TikTalk</h1>
+  @if(profiles.length > 0) { @for (profile of profiles; track profile.id) {
+
+  <app-profile-card [profile]="profile"> </app-profile-card>
+  } } @else {
+  <strong>
+    Error. Profile cards not found. It may happenned couse you forgot to use vpn
+  </strong>
+  }
+</div>
